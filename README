@@ -1,0 +1,50 @@
+kii-dfu - Kiibohd dfu-util GUI Frontend
+=======================================
+
+Simple GUI frontend to dfu-util
+
+Requires that the dfu-util binary/symlink be in the same directory as ./kii-dfu
+
+dfu-util can be found here: http://dfu-util.gnumonks.org/
+Please use 0.8 or higher is possible.
+
+
+Usage
+-----
+
+Run ./kii-dfu
+
+Browse to the .dfu.bin file to flash.
+Click Flash
+
+
+List Devices can be used to see if dfu-util can see your device.
+You may need to run the utility as root.
+
+
+Linux
+-----
+
+For Linux it is also possible to a udev rules file to /etc/udev/rules.d
+https://github.com/kiibohd/controller/blob/master/98-kiibohd.rules
+
+Then run:
+udevadm control --reload-rules
+
+And reconnect the USB device.
+You should no longer require root to flash the keyboard
+
+
+
+New Patches/Features/Backends
+-----------------------------
+
+Completely welcome :D
+
+
+Spec Additions/Fixes
+--------------------
+
+Contact HaaTa via IRC (#geekhack@irc.freenode.net or #deskthority).
+Or by email -> haata@kiibohd.com
+
