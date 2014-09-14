@@ -9,6 +9,20 @@ dfu-util can be found here: http://dfu-util.gnumonks.org/
 Please use 0.8 or higher is possible.
 
 
+Building
+--------
+
+*********
+* Linux *
+*********
+
+Requires: qt5, cmake 2.8.9+
+
+mkdir build
+cd build
+make
+
+
 Usage
 -----
 
