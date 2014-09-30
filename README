@@ -23,6 +23,55 @@ cd build
 make
 
 
+*******
+* Mac *
+*******
+
+Requires: qt5, cmake 2.8.9+
+(Works with Macports)
+
+mkdir build
+cd build
+make
+
+
+***********
+* Windows *
+***********
+
+Requires: Qt5 (http://qt-project.org/qt5 with mingw32), cmake 3.0+ (http://www.cmake.org/download/)
+
+The easiest way is to use QtCreator.
+Open up the CMakeLists.txt file with QtCreator (make sure to select a build directory different from the source directory)
+Run build
+
+
+
+Installation
+------------
+
+Linux/Mac just copy/symlink dfu-util to the same directory
+
+
+***********
+* Windows *
+***********
+
+* Driver Installation only do once *
+Download and run Zadig (http://zadig.akeo.ie/)
+Plug in the controller/keyboard and set into 're-flash mode'.
+(Just press the button on the back of keyboard, an led should turn on)
+
+'Kiibohd DFU Bootloader' should show up.
+In Driver, press the Up/Down arrows until you find 'libusbK'
+Click 'Install Driver'
+* Driver installation finished *
+
+
+Then copy dfu-util.exe to the same directory as kii-dfu.exe
+
+
+
 Usage
 -----
 
