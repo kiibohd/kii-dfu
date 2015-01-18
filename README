@@ -6,7 +6,7 @@ Simple GUI frontend to dfu-util
 Requires that the dfu-util binary/symlink be in the same directory as ./kii-dfu
 
 dfu-util can be found here: http://dfu-util.gnumonks.org/
-Please use 0.8 or higher is possible.
+Please use 0.8 or higher if possible.
 
 
 Building

@@ -24,9 +24,10 @@ project ( ${TARGET} )
 set ( CMAKE_AUTOMOC ON )
 set ( CMAKE_INCLUDE_CURRENT_DIR ON )
 
-add_definitions ( -ggdb )
+#add_definitions ()
 
 find_package ( Qt5Widgets REQUIRED )
+#find_library ( QT_LIBCORE libQtCore5.a PATH )
 
 qt5_wrap_ui ( UI_HDRS
 	mainwindow.ui
@@ -39,5 +40,11 @@ set ( SRCS
 
 add_executable ( ${TARGET} ${SRCS} ${UI_HDRS} )
 
+if ( WIN32 )
+	# Static Library Linking
+	set ( CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++" )
+endif ()
+
+#target_link_libraries ( ${TARGET} ${QT_LIBCORE} )
 qt5_use_modules ( ${TARGET} Widgets )
 

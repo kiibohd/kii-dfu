@@ -106,7 +106,11 @@ void MainWindow::dfuFlashBinary()
 		return;
 	}
 
-	QFile dfuUtil( binaryPath + "/" + "dfu-util" );
+#ifdef WIN32
+    QFile dfuUtil( binaryPath + "/" + "dfu-util.exe");
+#else
+    QFile dfuUtil( binaryPath + "/" + "dfu-util" );
+#endif
 
 	// Only run dfu-util if it exists
 	if ( !checkDFU( &dfuUtil ) )
