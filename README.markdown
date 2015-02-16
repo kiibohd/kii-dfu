@@ -54,6 +54,7 @@ Linux/Mac just copy/symlink `dfu-util` to the same directory
 ### Windows
 
 **Driver Installation, only do once**
+
 Download and run [Zadig](http://zadig.akeo.ie/)
 Plug in the controller/keyboard and set into 're-flash mode'.
 (Just press the button on the back of keyboard, an led should turn on)
@@ -61,6 +62,7 @@ Plug in the controller/keyboard and set into 're-flash mode'.
 'Kiibohd DFU Bootloader' should show up.
 In Driver, press the Up/Down arrows until you find 'libusbK'
 Click 'Install Driver'
+
 **Driver installation finished**
 
 
